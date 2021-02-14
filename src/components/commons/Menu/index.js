@@ -1,10 +1,10 @@
 import React from 'react';
-import { Logo } from '../../theme/Logo';
+import { Logo } from '../../../theme/Logo';
 import { Button } from '../Button';
 import { MenuWrapper } from './styles/MenuWrapper';
 
 export default function Menu() {
-  const links = [{texto: "Home", url: "/" }, { texto: "Perguntas", url: "/faq" }, { texto: "Sobre", url: "/sobre" }]
+  const links = [{ texto: "Home", url: "/" }, { texto: "Perguntas", url: "/faq" }, { texto: "Sobre", url: "/sobre" }]
 
   return (
     <MenuWrapper>
@@ -14,11 +14,11 @@ export default function Menu() {
       <MenuWrapper.Center>
         {links.map((link) => {
           return (
-          <li key={link.url}>
-            <a href={link.url}>
-              {link.texto}
-            </a> 
-          </li>)
+            <li key={link.url}>
+              <a href={link.url}>
+                {link.texto}
+              </a>
+            </li>)
         })}
       </MenuWrapper.Center>
       <MenuWrapper.RightSide>
