@@ -49,7 +49,7 @@ export const Grid = {
           flex-shrink: 0;
           flex-basis: ${(100 * value) / 12}%;
           max-width: ${(100 * value) / 12}%;
-        `
+        `;
       }
       return breakpointsMedia({
         xs: value?.xs
@@ -92,13 +92,13 @@ export const Grid = {
             max-width: ${(100 * value.xl) / 12}%;
           `
           : '',
-      })
+      });
     }}
     ${function ({ offset }) {
       if (typeof offset === 'number') {
         return css`
           margin-left: ${(100 * offset) / 12}%;
-        `
+        `;
       }
       return breakpointsMedia({
         xs: offset?.xs
@@ -126,7 +126,7 @@ export const Grid = {
             margin-left: ${(100 * offset.xl) / 12}%;
           `
           : '',
-      })
+      });
     }}
     ${propToStyle('display')}
     ${propToStyle('alignItems')}

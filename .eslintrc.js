@@ -18,7 +18,10 @@ module.exports = {
     'react',
   ],
   rules: {
-    'react/jsx-filename-extension': [1, { allow: 'as-needed' }],
-
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    },
+    'linebreak-style': ['error', process.platform === 'win32' ? 'windows' : 'unix'],
+    'import/prefer-default-export': 'off',
   },
 };
